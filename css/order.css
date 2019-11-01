@@ -12,29 +12,12 @@
     position: relative;
 }
 
-#sushi {
-
-}
-
-#drinks {
-
-}
-
-#dessert {
-
-}
-
 #confirmation {
     float: right;
     width: 35%;
 }
 
-form > div {
-    
-}
-
-caption {
-}
+/** table styles **/
 
 tbody tr:nth-of-type(2n) {
     background-color: #83aaa9;
@@ -62,12 +45,16 @@ th {
     text-align: left;
 }
 
-
 tr:hover {background-color:#f5f5f5;}
+
+/** end table styling **/
+
+
 
 #container > div {
     width: 100%;
     display: inline-flex;
+    flex-flow: row wrap;
 }
 
 #container > div * div{
@@ -75,43 +62,35 @@ tr:hover {background-color:#f5f5f5;}
 }
 
 .hover {
-    opacity: 0;
     width: 100%;
-
-
-
+    display: flex;
+    flex-flow: row wrap;
 }
 
-#sushi:hover .hover {
+#sushi, #drinks, #dessert {
+    opacity: 0.5;
+}
+
+#sushiTitle:hover ~ #sushi, #drinksTitle:hover ~ #drinks, #dessertTitle:hover ~ #dessert {
     opacity: 1;
     z-index: 10;
 }
 
-
-#drinks:hover .hover {
-    opacity: 1;
-    z-index: 10;
-}
-#dessert:hover .hover {
-    opacity: 1;
-    z-index: 10;
+#sushiTitle:hover, #drinksTitle:hover, #dessertTitle:hover {
+    background-color: white;
 }
 
 #titles {
     width: 100%;
     display: inline-flex;
-
+    flex-flow: row wrap;
+    border-collapse: collapse;
 }
 #titles > p {
-    width: 33%;
+    border-style: solid;
+    width: 32%;
+    background-color: #83aaa9;
 }
-
-
-/**
-.hover:hover {
-    opacity: 1;
-}
-**/
 
 a:visited, a {
     color: black;
