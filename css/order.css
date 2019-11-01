@@ -7,11 +7,6 @@
     width: 65%;
 }
 
-#container {
-    width: 100%;
-    position: relative;
-}
-
 #confirmation {
     float: right;
     width: 35%;
@@ -37,6 +32,10 @@ tr td:last-child, tr th:last-child {
     text-align: right;
 }
 
+thead {
+    border-bottom: 1px solid gray;
+}
+
 tfoot {
     font-weight: bold;
     border-top: 1px solid gray;
@@ -46,17 +45,11 @@ th {
     text-align: left;
 }
 
-tr:hover {background-color:#f5f5f5;}
+tr:hover, tbody tr:nth-of-type(2n):hover {
+    background-color:#f5f5f5;
+}
 
 /** end table styling **/
-
-
-
-#container > div {
-    width: 100%;
-    display: inline-flex;
-    flex-flow: row wrap;
-}
 
 form div {
     width: 33%;
@@ -77,7 +70,7 @@ form div {
 }
 
 #sushiTitle:hover, #drinksTitle:hover, #dessertTitle:hover {
-    background-color: white;
+    background-color: #a5caca;
 }
 
 #titles {
@@ -86,6 +79,7 @@ form div {
     flex-flow: row wrap;
     border-collapse: collapse;
 }
+
 #titles > p {
     border-style: solid;
     width: 32%;
