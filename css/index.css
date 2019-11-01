@@ -1,0 +1,25 @@
+video {
+    width: 100%;
+}
+
+#content {
+}
+
+#content > * {
+}
+
+#information {
+    float: left;
+    width: 50%;
+}
+
+#promotion {
+    float: right;
+    width: 50%;
+}
+
+#reservation {
+    
+    float: left;
+    width: 50%;
+}

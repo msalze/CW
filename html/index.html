@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <title>City Sushi</title>
 </head>
 <body>
@@ -12,67 +13,70 @@
         <img src="./../resources/Sushi-96.png" alt="A picture of sushi" title="sushi">
         <h1>City Sushi</h1>
     </header>
-    <nav id="nav">
-        <a href="order.html">Order</a>
-        <a href="index.html">Home</a>
-        <a href="design.html">Design</a>
-    </nav>
-    <div id="information">
-        <dl>
-            <dt>Address</dt>
-            <dd>83 Tat Chee Avenue,</dd>
-            <dd>Kowloon,</dd>
-            <dd>Hong Kong</dd>
+    <div id="content">    
+        <nav id="nav">
+            <a href="order.html">Order</a>
+            <a href="index.html">Home</a>
+            <a href="design.html">Design</a>
+        </nav>
+        <div id="information">
+            <dl>
+                <dt>Address</dt>
+                <dd>83 Tat Chee Avenue,</dd>
+                <dd>Kowloon,</dd>
+                <dd>Hong Kong</dd>
 
-            <dt>Tel</dt>
-            <dd>3442-7788</dd>
+                <dt>Tel</dt>
+                <dd>3442-7788</dd>
 
-            <dt>Business Hours</dt>
-            <dd>12:00 - 3:00pm</dd>
-            <dd>6:30 - 11:30pm</dd>
-            <dd>Last Order 10:30pm</dd>
+                <dt>Business Hours</dt>
+                <dd>12:00 - 3:00pm</dd>
+                <dd>6:30 - 11:30pm</dd>
+                <dd>Last Order 10:30pm</dd>
 
-            <dt>Signature Dishes</dt>
-            <dd>Foie gras with mustard seeds and green onions; Bisque - a smooth and creamy, French potage; Croque Monsier - baked or fried boiled ham and cheese sandwich</dd>
+                <dt>Signature Dishes</dt>
+                <dd>Foie gras with mustard seeds and green onions; Bisque - a smooth and creamy, French potage; Croque Monsier - baked or fried boiled ham and cheese sandwich</dd>
 
-            <dt>Location</dt>
-            <dd>
-                <img src="./../resources/location.jpg" alt="Location of CityU" title="Location">
-            </dd>
-        </dl>
-        <a href="order.html"><img src="../resources/button.png" alt="picture of a button" title="to order"></a>
-    </div>
-    <div id="promotion">
-        <p>Lunch Time Special Offer - $188 Sushi Set 12 Pieces</p>
-        <video autoplay loop>
-            <source src="https://courses.cs.cityu.edu.hk/cs2204/barbecue.mp4" type="video/mp4">
-            <source src="https://courses.cs.cityu.edu.hk/cs2204/barbecue.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div id="reservation">
-        <form action="/index.html">
-            <fieldset>
-                <legend>Reservation</legend>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date">
-                <label for="time">Time:</label>
-                <select id="time" name="time">
-                    <option value="12-1pm" selected="selected" >12-1pm</option>
-                    <option value="1-2pm">1-2pm</option>
-                    <option value="2-3pm">2-3pm</option>
-                    <option value="6:30-7:30pm">6:30-7:30pm</option>
-                    <option value="7:30-8:30pm">7:30-8:30pm</option>
-                    <option value="8:30-9:30pm">8:30-9:30pm</option>
-                    <option value="9:30-10:30pm">9:30-10:30pm</option>
-                    <option value="other">Other</option>
-                </select>
-                <label for="noGuests">No. of Guests:</label>
-                <input type="number" min="1" id="noGuests" name="noGuests" placeholder="No. of Guests">
-                <input type="submit" value="Check Availability">
-                <input type="reset" value="Reset">
-            </fieldset>
-        </form>
+                <dt>Location</dt>
+                <dd>
+                    <img src="./../resources/location.jpg" alt="Location of CityU" title="Location">
+                </dd>
+            </dl>
+            <a href="order.html"><img src="../resources/button.png" alt="picture of a button" title="to order"></a>
+        </div>
+        <div id="promotion">
+            <p>Lunch Time Special Offer - $188 Sushi Set 12 Pieces</p>
+            <video autoplay loop>
+                <source src="https://courses.cs.cityu.edu.hk/cs2204/barbecue.mp4" type="video/mp4">
+                <source src="https://courses.cs.cityu.edu.hk/cs2204/barbecue.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="reservation">
+            <form action="/index.html">
+                <fieldset>
+                    <legend>Reservation</legend>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                    <label for="time">Time:</label>
+                    <select id="time" name="time">
+                        <option value="12-1pm" selected="selected" >12-1pm</option>
+                        <option value="1-2pm">1-2pm</option>
+                        <option value="2-3pm">2-3pm</option>
+                        <option value="6:30-7:30pm">6:30-7:30pm</option>
+                        <option value="7:30-8:30pm">7:30-8:30pm</option>
+                        <option value="8:30-9:30pm">8:30-9:30pm</option>
+                        <option value="9:30-10:30pm">9:30-10:30pm</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="noGuests">No. of Guests:</label>
+                    <input type="number" min="1" id="noGuests" name="noGuests" placeholder="No. of Guests">
+                    <input type="submit" value="Check Availability">
+                    <input type="reset" value="Reset">
+                </fieldset>
+            </form>
+        </div>
+        
     </div>
     <footer id="footer">
         <span>©CityU 2019 sources of images and text from Wikimedia Commons and Courtesy of <a href="https://icons8.com/" target="_blank">Icon pack by Icons8</a> ; designed by <a href="design.html">CS2204</a> </span>
