@@ -1,9 +1,10 @@
 #content {
-
+    width: 100%;
 }
 
 #menu {
-
+    float: left;
+    width: 70%;
 }
 
 #sushi {
@@ -19,5 +20,30 @@
 }
 
 #confirmation {
+    float: right;
+    width: 30%;
+}
+
+form > div {
     
+}
+
+caption {
+}
+
+tbody tr:nth-of-type(2n) {
+    background-color: #83aaa9;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+th {
+    text-align: left;
 }

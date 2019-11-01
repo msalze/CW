@@ -1,11 +1,12 @@
 body {
-    background-color: yellow;
+    background-color: #d5f2f1;
     padding: 0%;
     margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 #header {
-    background-color: red;
+    background-color: #1c9bd6;
     text-align: center;
     overflow: auto;
     margin: 0%;
