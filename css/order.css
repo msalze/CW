@@ -9,7 +9,7 @@
 
 #container {
     width: 100%;
-    display: inline-flex;
+    position: relative;
 }
 
 #sushi {
@@ -66,14 +66,54 @@ th {
 tr:hover {background-color:#f5f5f5;}
 
 #container > div {
+    width: 100%;
+    display: inline-flex;
+}
+
+#container > div * div{
+    width: 33%;
+}
+
+.hover {
+    opacity: 0;
+    width: 100%;
+
+
+
+}
+
+#sushi:hover .hover {
+    opacity: 1;
+    z-index: 10;
+}
+
+
+#drinks:hover .hover {
+    opacity: 1;
+    z-index: 10;
+}
+#dessert:hover .hover {
+    opacity: 1;
+    z-index: 10;
+}
+
+#titles {
+    width: 100%;
+    display: inline-flex;
+
+}
+#titles > p {
     width: 33%;
 }
 
 
-.hover {
-    opacity: 0;
-}
-
-.hover:hover, #sushi:hover {
+/**
+.hover:hover {
     opacity: 1;
+}
+**/
+
+a:visited, a {
+    color: black;
+    text-decoration: none;
 }
