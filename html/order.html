@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/order.css">
+    <link rel="stylesheet" type="text/css" href="../css/print.css" media="print">
+
     <title>City Sushi</title>
 </head>
 <body>
@@ -16,51 +18,53 @@
     <div id="content">
         <div id="menu">
             <h4>Menu</h4>
-            <div id="sushi">
-                <p>Sushi</p>
-                <form action="/index.html">
-                    <div>
-                        <img src="./../resources/sushi-1.jpg" alt="A picture of sushi" title="sushi">
-                        <input type="number" min="0" name="sushi1" id="sushi1">
-                        <button>Add</button>
-                    </div>
-                    <div>
-                        <img src="./../resources/sushi-2.jpg" alt="A picture of sushi" title="sushi">
-                        <input type="number" min="0" name="sushi2" id="sushi2">
-                        <button>Add</button>
-                    </div>
-                    <div>
-                        <img src="./../resources/sushi-3.jpg" alt="A picture of sushi" title="sushi">
-                        <input type="number" min="0" name="sushi3" id="sushi3">
-                        <button>Add</button>
-                    </div>
-                </form>
-                
-            </div>
-            <div id="drinks">
-                <p>Drinks</p>
-                <form action="/index.html">
-                    <div>
-                        <img src="./../resources/drink-1.jpg" alt="A picture of a drink" title="drink">
-                        <input type="number" min="0" name="drink1" id="drink1">
-                        <button>Add</button>
-                    </div>
-                    <div>
-                        <img src="./../resources/drink-2.jpg" alt="A picture of a drink" title="drink">
-                        <input type="number" min="0" name="drink2" id="drink2">
-                        <button>Add</button>
-                    </div>
-                </form>
-            </div>
-            <div id="dessert">
-                <p>Dessert</p>
-                <form action="/index.html">
-                    <div>
-                        <img src="./../resources/dessert-1.jpg" alt="A picture of a dessert" title="dessert">
-                        <input type="number" min="0" name="dessert1" id="dessert1">
-                        <button>Add</button>
-                    </div>
-                </form>
+            <div id="container">
+                <div id="sushi">
+                    <p>Sushi</p>
+                    <form action="/index.html" class="hover">
+                        <div>
+                            <img src="./../resources/sushi-1.jpg" alt="A picture of sushi" title="sushi">
+                            <input type="number" min="0" name="sushi1" id="sushi1">
+                            <button>Add</button>
+                        </div>
+                        <div>
+                            <img src="./../resources/sushi-2.jpg" alt="A picture of sushi" title="sushi">
+                            <input type="number" min="0" name="sushi2" id="sushi2">
+                            <button>Add</button>
+                        </div>
+                        <div>
+                            <img src="./../resources/sushi-3.jpg" alt="A picture of sushi" title="sushi">
+                            <input type="number" min="0" name="sushi3" id="sushi3">
+                            <button>Add</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                <div id="drinks">
+                    <p>Drinks</p>
+                    <form action="/index.html" class="hover">
+                        <div>
+                            <img src="./../resources/drink-1.jpg" alt="A picture of a drink" title="drink">
+                            <input type="number" min="0" name="drink1" id="drink1">
+                            <button>Add</button>
+                        </div>
+                        <div>
+                            <img src="./../resources/drink-2.jpg" alt="A picture of a drink" title="drink">
+                            <input type="number" min="0" name="drink2" id="drink2">
+                            <button>Add</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="dessert" >
+                    <p>Dessert</p>
+                    <form action="/index.html" class="hover">
+                        <div>
+                            <img src="./../resources/dessert-1.jpg" alt="A picture of a dessert" title="dessert">
+                            <input type="number" min="0" name="dessert1" id="dessert1">
+                            <button>Add</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -100,7 +104,7 @@
                 </tfoot>
 
             </table>
-            <a href="/">undo</a>
+            <a href="/" id="undo">undo</a>
         </div>
     </div>
 
