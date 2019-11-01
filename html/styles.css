@@ -1,0 +1,16 @@
+body {
+    background-color: rebeccapurple;
+}
+
+#header {
+    background-color: red;
+    display: inline;
+}
+
+#header:first-child {
+   /** float: left; **/
+}
+
+#footer {
+    color: orange;
+}

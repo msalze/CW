@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>City Sushi</title>
+</head>
+<body>
+    <header id="header">
+        <img src="./../resources/Sushi-96.png" alt="A picture of sushi" title="sushi">
+        <h1>City Sushi</h1>
+    </header>
+    <nav>
+        <a href="order.html">Order</a>
+        <a href="index.html">Home</a>
+        <a href="design.html">Design</a>
+    </nav>
+    <div id="menu">
+        <h4>Menu</h4>
+        <div id="sushi">
+            <p>Sushi</p>
+            <form action="/index.html">
+                <div>
+                    <img src="./../resources/sushi-1.jpg" alt="A picture of sushi" title="sushi">
+                    <input type="number" min="0" name="sushi1" id="sushi1">
+                    <button>Add</button>
+                </div>
+                <div>
+                    <img src="./../resources/sushi-2.jpg" alt="A picture of sushi" title="sushi">
+                    <input type="number" min="0" name="sushi2" id="sushi2">
+                    <button>Add</button>
+                </div>
+                <div>
+                    <img src="./../resources/sushi-3.jpg" alt="A picture of sushi" title="sushi">
+                    <input type="number" min="0" name="sushi3" id="sushi3">
+                    <button>Add</button>
+                </div>
+            </form>
+            
+        </div>
+        <div id="drinks">
+            <p>Drinks</p>
+            <form action="/index.html">
+                <div>
+                    <img src="./../resources/drink-1.jpg" alt="A picture of a drink" title="drink">
+                    <input type="number" min="0" name="drink1" id="drink1">
+                    <button>Add</button>
+                </div>
+                <div>
+                    <img src="./../resources/drink-2.jpg" alt="A picture of a drink" title="drink">
+                    <input type="number" min="0" name="drink2" id="drink2">
+                    <button>Add</button>
+                </div>
+            </form>
+        </div>
+        <div id="dessert">
+            <p>Dessert</p>
+            <form action="/index.html">
+                <div>
+                    <img src="./../resources/dessert-1.jpg" alt="A picture of a dessert" title="dessert">
+                    <input type="number" min="0" name="dessert1" id="dessert1">
+                    <button>Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmation">
+        <table>
+            <caption>
+                <h4>Ordered Items</h4>
+                <p>Date</p>
+                <p>Table Information</p>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Qty</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Salmon Sushi Roll</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>4</td>
+                </tr>
+            </tfoot>
+
+        </table>
+        <a href="/">undo</a>
+    </div>
+
+    <footer id="footer">
+        <span>©CityU 2019 sources of images and text from Wikimedia Commons and Courtesy of <a href="https://icons8.com/" target="_blank">Icon pack by Icons8</a> ; designed by <a href="design.html">CS2204</a> </span>
+    </footer>
+</body>
+</html>
