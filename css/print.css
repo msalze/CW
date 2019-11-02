@@ -4,10 +4,7 @@
 
 #confirmation {
     float: none;
-    align-content: center;
-    position: relative;
-    left: 33%;
-    flex-grow: inherit;
+    margin: 0 auto;
 }
 
 body {

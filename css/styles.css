@@ -13,13 +13,14 @@ body {
 }
 
 #header > * {
+    position: relative;
     display: inline;
     vertical-align: middle;
 }
 
-#footer {
-    color: black;
-    padding-bottom: 
+#header > img {
+    animation-name: spin;
+    animation-duration: 4s;
 }
 
 #content {
@@ -27,4 +28,17 @@ body {
     content: "";
     display: table;
     clear: both;
+}
+
+#footer {
+    color: black;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+    background-color: #1c9bd6;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
