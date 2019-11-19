@@ -30,6 +30,7 @@ form div {
     flex-flow: row wrap;
 }
 
+/**
 #sushi, #drinks, #dessert {
     display: none;
 }
@@ -41,7 +42,7 @@ form div {
 #sushiTitle:hover, #drinksTitle:hover, #dessertTitle:hover {
     background-color: #a5caca;
 }
-
+**/
 
 
 #confirmation {
