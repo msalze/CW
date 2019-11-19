@@ -40,15 +40,15 @@
             <a href="order.html"><img class="button" src="../resources/button.png" alt="picture of a button" title="to order"></a>
         </div>
         <div id="promotion">
-            <p>Lunch Time Special Offer - $188 Sushi Set 12 Pieces</p>
-            <video autoplay muted loop>
+            <p id="promotionText">Lunch Time Special Offer - $188 Sushi Set 12 Pieces</p>
+            <video autoplay muted loop onended="changeVideo()">
                 <source src="https://courses.cs.cityu.edu.hk/cs2204/barbecue.mp4" type="video/mp4">
                 <source src="https://courses.cs.cityu.edu.hk/cs2204/barbecue.ogg" type="video/ogg">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div id="reservation">
-            <form action="/index.html">
+            <form action="index.html" onsubmit="return checkSubmission(this)" method="POST">
                 <fieldset>
                     <legend>Reservation</legend>
                     <label for="date">Date:</label>
@@ -66,6 +66,7 @@
                     </select>
                     <label for="noGuests">No. of Guests:</label>
                     <input type="number" min="1" id="noGuests" name="noGuests" placeholder="No. of Guests">
+                    <div id="errorMessage"></div>
                     <input type="submit" value="Check Availability">
                     <input type="reset" value="Reset">
                 </fieldset>
@@ -76,5 +77,7 @@
     <footer id="footer">
         <span>©CityU 2019 sources of images and text from Wikimedia Commons and Courtesy of <a href="https://icons8.com/" target="_blank">Icon pack by Icons8</a> ; designed by <a href="design.html">CS2204</a> </span>
     </footer>
+    
+    <script type="text/javascript" src="../js/index.js"></script>
 </body>
 </html>
