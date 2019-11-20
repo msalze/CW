@@ -2,6 +2,13 @@ let promotion = new Array ("Offer1", "Offer2", "Offer3");
 let random = Math.floor(Math.random() * 3);
 
 
+document.querySelector("video").onended = function changeVideo() {
+    const video = document.querySelector("video");
+    video.autoplay
+    video.innerHTML = "<source src=\"https://courses.cs.cityu.edu.hk/cs2204/example/video/nature.mp4\" type=\"video/mp4\"> Your browser does not support the video tag.";
+    video.load();
+};
+
 timeout(random, promotion);
 
 function timeout() {
@@ -17,12 +24,7 @@ function changeText(index, texts) {
     document.querySelector("#promotionText").innerHTML = text;
 }
 
-function changeVideo() {
-    const video = document.querySelector("video");
-    video.autoplay
-    video.innerHTML = "<source src=\"https://courses.cs.cityu.edu.hk/cs2204/example/video/nature.mp4\" type=\"video/mp4\"> Your browser does not support the video tag.";
-    video.load();
-}
+
 
 function checkSubmission(form) {
     var alertMessage = "";

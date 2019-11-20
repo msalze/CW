@@ -71,6 +71,14 @@ function recal() {
     if (isNaN(inte)) {
         inte = 0;
     }
-    
+
     document.querySelector("#tot").innerHTML = (inte).toString();
+}
+
+function undo() {
+    let el = document.querySelector("tbody");
+    el.removeChild(el.lastChild);
+    
+    recal();
+    return false;
 }
